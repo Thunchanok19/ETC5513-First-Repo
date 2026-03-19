@@ -4,3 +4,11 @@ format: html
 ---
 
 # first quarto on git
+## second push
+
+```{r}
+data <- c(3, 4, 5, 10) 
+data_2 <- c(1, 4, 7, 9) 
+data + data_2
+```
+
