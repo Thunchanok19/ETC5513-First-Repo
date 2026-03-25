@@ -1,10 +1,34 @@
 ---
 title: "Untitled"
-format: html
+format: 
+    html:
+        number-sections: true
+execute: 
+  echo: false 
+  warning: true
+  message: true
 ---
 
 # first quarto on git
 ## second push
+### echo false hide the code
+### exception can go into the individual code chunk. it will override global options
+### like if the global option is excho false, but in the chunk is true, it will shoe code for that chunk.
+
+```{r}
+library(ggplot2)
+library(knitr)
+```
+
+```{r}
+data("mtcars")
+```
+```{r}
+#| lable: tbl-summarytable
+#| tbl-cap: Summary of dataset
+kable(head(mtcars))
+```
+
 
 ```{r}
 data <- c(3, 4, 5, 10) 
