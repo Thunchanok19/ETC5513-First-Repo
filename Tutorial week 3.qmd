@@ -1,0 +1,85 @@
+---
+title: "Tutorial week 3"
+format: html
+editor: visual
+---
+
+# Reading Avian Influenza Data
+
+```{r read data}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(tidyverse)
+dat <- read_csv("data/avian_influenza_numbers.csv")
+```
+
+```{r use function head}
+#| echo: false
+#| output: false
+head(dat, 10)
+glimpse(dat)
+str(dat)
+#show data structure ex. class
+```
+
+The dataset has `r nrow(dat)` rows and `r ncol(dat)` columns.
+
+The dataset has `{r} nrow(dat)` rows and `{r} ncol(dat)` columns.
+Return the same results
+
+### Why is it important to know the dimension of your dataset?
+To have a better understanding of the data, verify you results, and determine the complexity of your analysis / model.
+
+### What are the variable names in the dataset?
+```{r}
+names(dat)
+```
+
+- Month: The particular month that the infection is recorded.
+- China: The number of cases recorded in each month.
+
+## Exercise 4
+
+```{r}
+library(lubridate)
+data_clean <- dat |> 
+  select(Month, Australia, Egypt, `United States`) |> 
+  mutate(Month = mdy(Month)) |> 
+  filter(!is.na(Month))
+## United states has space so `` is needed
+```
+
+```{r}
+library(kableExtra)
+data_clean |> 
+  summarise(count_aus = sum(Australia),
+            count_egy = sum(Egypt), 
+            count_us = sum(`United States`) 
+            ) |> 
+  kable() |> 
+  kable_styling()
+```
+
+Visualise the counts using histogram
+```{r}
+library(ggplot2)
+
+#plot one country at a time
+data_clean |> 
+  ggplot(aes(x = Egypt)) + 
+  geom_histogram(binwidth = 5)
+
+#plot multiple countries at the same time
+data_clean |> 
+  pivot_longer(-Month) |> 
+  ggplot(aes(x = value, fill = name)) + 
+  geom_histogram(binwidth = 5, position = "dodge") + 
+  facet_wrap(~name)
+
+#do not change Month column
+  
+```
+
+
