@@ -26,19 +26,20 @@ str(dat)
 
 The dataset has `r nrow(dat)` rows and `r ncol(dat)` columns.
 
-The dataset has `{r} nrow(dat)` rows and `{r} ncol(dat)` columns.
-Return the same results
+The dataset has `{r} nrow(dat)` rows and `{r} ncol(dat)` columns. Return the same results
 
 ### Why is it important to know the dimension of your dataset?
+
 To have a better understanding of the data, verify you results, and determine the complexity of your analysis / model.
 
 ### What are the variable names in the dataset?
+
 ```{r}
 names(dat)
 ```
 
-- Month: The particular month that the infection is recorded.
-- China: The number of cases recorded in each month.
+-   Month: The particular month that the infection is recorded.
+-   China: The number of cases recorded in each month.
 
 ## Exercise 4
 
@@ -63,6 +64,7 @@ data_clean |>
 ```
 
 Visualise the counts using histogram
+
 ```{r}
 library(ggplot2)
 
@@ -81,5 +83,3 @@ data_clean |>
 #do not change Month column
   
 ```
-
-
