@@ -42,8 +42,6 @@ resolved!!
 a <- c(1, 2, 3)
 ```
 
-<<<<<<< HEAD
-
 cats are cute!
 tomorrow is saturday
 
@@ -58,3 +56,11 @@ Dogs are cute too.
 Penguins live in Antractica.
 So cold!!
 
+now we are trying to rebase!!
+Today is Friday!!
+Penguin is cute!
+
+Dogs are cute too.
+
+Penguins live in Antractica.
+So cold!!
