@@ -36,7 +36,10 @@ data_2 <- c(1, 4, 7, 9)
 data + data_2
 ```
 
-try making some changes during exam practice!!
-changes to my newbranch!!
+try to make conflict
+update on branchtest again!!
 
-let change to branchtest
+
+```{r}
+a <- c(1, 2, 3)
+```
