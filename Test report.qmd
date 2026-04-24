@@ -42,10 +42,6 @@ resolved!!
 a <- c(1, 2, 3)
 ```
 
-stash with a message
-
-stash stash stash!!!
-
-
-one more stash!!
-stash stash stash!!!
+now we are trying to rebase!!
+Today is Friday!!
+Penguin is cute!
