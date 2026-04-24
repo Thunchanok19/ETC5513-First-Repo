@@ -47,3 +47,6 @@ Today is Friday!!
 Penguin is cute!
 
 Dogs are cute too.
+
+Penguins live in Antractica.
+So cold!!
