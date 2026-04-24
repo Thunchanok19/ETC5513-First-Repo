@@ -42,10 +42,8 @@ resolved!!
 a <- c(1, 2, 3)
 ```
 
-stash with a message
+cats are cute!
+tomorrow is saturday
 
-stash stash stash!!!
+it is mostly cloudy now!!
 
-
-one more stash!!
-stash stash stash!!!
