@@ -41,3 +41,8 @@ resolved!!
 ```{r}
 a <- c(1, 2, 3)
 ```
+
+
+
+
+stash with a message
