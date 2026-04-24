@@ -36,4 +36,5 @@ data_2 <- c(1, 4, 7, 9)
 data + data_2
 ```
 
-Week 7 made sone changes again!
+try making some changes during exam practice!!
+changes to my newbranch!!
