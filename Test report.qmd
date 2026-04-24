@@ -42,8 +42,13 @@ resolved!!
 a <- c(1, 2, 3)
 ```
 
+
 cats are cute!
 tomorrow is saturday
 
 it is mostly cloudy now!!
+
+now we are trying to rebase!!
+Today is Friday!!
+Penguin is cute!
 
