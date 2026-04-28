@@ -36,14 +36,5 @@ data_2 <- c(1, 4, 7, 9)
 data + data_2
 ```
 
-resolved!!
-
-```{r}
-a <- c(1, 2, 3)
-```
-
-cats are cute!
-tomorrow is saturday
-
-it is mostly cloudy now!!
-
+A new feature-branch!!
+let create a new branch from stash!!
