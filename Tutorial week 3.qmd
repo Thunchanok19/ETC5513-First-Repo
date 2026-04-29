@@ -38,8 +38,8 @@ To have a better understanding of the data, verify you results, and determine th
 names(dat)
 ```
 
--   Month: The particular month that the infection is recorded.
--   China: The number of cases recorded in each month.
+- Month: The particular month that the infection is recorded.
+- China: The number of cases recorded in each month.
 
 ## Exercise 4
 
